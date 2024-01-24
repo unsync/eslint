@@ -1,7 +1,7 @@
 {
   "name": "@unsync/eslint",
   "type": "module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Shared eslint config for my projects",
   "license": "MIT",
   "repository": "unsync/eslint",
@@ -17,7 +17,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "exit 0"
   },
   "dependencies": {
     "@antfu/eslint-config": "^2.6.3"
