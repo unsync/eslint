@@ -4,6 +4,7 @@ import antfu from '@antfu/eslint-config'
 const defaults = {
   rules: {
     'style/brace-style': ['error', '1tbs'],
+    'ts/consistent-type-definitions': ['error', 'interface'],
     'import/order': [
       'error',
       {
