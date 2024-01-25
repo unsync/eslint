@@ -1,7 +1,7 @@
 {
   "name": "@unsync/eslint",
   "type": "module",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Shared eslint config for my projects",
   "license": "MIT",
   "repository": "unsync/eslint",
