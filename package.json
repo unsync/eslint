@@ -19,9 +19,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "exit 0",
-    "push": "npm version patch && git push",
-    "push-minor": "npm version minor && git push",
-    "push-major": "npm version major && git push"
+    "release:patch": "npm version patch",
+    "release:minor": "npm version minor",
+    "release:major": "npm version major"
   },
   "dependencies": {
     "@antfu/eslint-config": "^2.6.3"
