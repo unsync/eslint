@@ -4,7 +4,10 @@
   "version": "1.0.17",
   "description": "Shared eslint config for my projects",
   "license": "MIT",
-  "repository": "unsync/eslint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unsync/eslint.git"
+  },
   "keywords": [
     "eslint-config"
   ],
