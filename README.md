@@ -14,8 +14,8 @@ import eslint from '@unsync/eslint'
 
 // possibility to override rules
 export default eslint({
-    rules: {
-        "style/brace-style": "off",
-    }
+  rules: {
+    'style/brace-style': 'off',
+  }
 })
 ```
