@@ -14,12 +14,11 @@ if(fs.existsSync(packageJsonPath)) {
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2))
 }
 
+// add eslint.config.js
 const eslintConfigPath = `${rootPath}eslint.config.js`
-if(fs.existsSync(eslintConfigPath)) {
-    const content = '// eslint.config.js\n' +
-        'import eslint from \'./index.js\'\n' +
-        '\n' +
-        'export default eslint()\n'
-    console.info('postinstall: add eslint.config.js')
-    fs.writeFileSync(eslintConfigPath, content);
-}
+const content = '// eslint.config.js\n' +
+    'import eslint from \'./index.js\'\n' +
+    '\n' +
+    'export default eslint()\n'
+console.info('postinstall: add eslint.config.js')
+fs.writeFileSync(eslintConfigPath, content);
