@@ -13,6 +13,7 @@
   ],
   "main": "index.js",
   "files": [
+    "scripts/postinstall.cjs",
     "index.js"
   ],
   "engines": {
@@ -24,7 +25,8 @@
     "test": "exit 0",
     "release:patch": "npm version -m 'release:patch' patch",
     "release:minor": "npm version -m 'release:minor' minor",
-    "release:major": "npm version -m 'release:major' major"
+    "release:major": "npm version -m 'release:major' major",
+    "postinstall": "node scripts/postinstall.cjs"
   },
   "dependencies": {
     "@antfu/eslint-config": "^2.6.3"
