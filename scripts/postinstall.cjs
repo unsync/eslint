@@ -17,7 +17,7 @@ if(fs.existsSync(packageJsonPath)) {
 // add eslint.config.js
 const eslintConfigPath = `${rootPath}eslint.config.js`
 const content = '// eslint.config.js\n' +
-    'import eslint from \'./index.js\'\n' +
+    'import eslint from \'@unsync/eslint\'\n' +
     '\n' +
     'export default eslint()\n'
 console.info('postinstall: add eslint.config.js')
