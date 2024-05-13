@@ -26,6 +26,14 @@ const defaults = {
       },
     ],
   },
+  toml: {
+    // this helps for cloudflare workers
+    overrides: {
+      'toml/inline-table-curly-spacing': 'off',
+      'toml/array-bracket-newline': 'off',
+      'toml/padding-line-between-pairs': 'off'
+    }
+  }
 }
 
 async function eslint(config) {
