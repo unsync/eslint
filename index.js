@@ -1,5 +1,6 @@
 // eslint.config.js
 import antfu from '@antfu/eslint-config'
+import lodash from 'lodash'
 
 const defaults = {
   rules: {
@@ -37,7 +38,7 @@ const defaults = {
 }
 
 async function eslint(config) {
-  return antfu({ ...defaults, ...config })
+  return antfu(lodash.merge(defaults, config))
 }
 
 export default eslint
