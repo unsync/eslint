@@ -3,7 +3,8 @@ import antfu from '@antfu/eslint-config'
 
 const defaults = {
   rules: {
-    'style/brace-style': ['error', '1tbs'],
+    'style/max-statements-per-line': ['error', { max: 2 }],
+    'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'ts/consistent-type-definitions': ['error', 'interface'],
     'import/order': [
       'error',
