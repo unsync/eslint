@@ -4,6 +4,7 @@ import lodash from 'lodash'
 
 const defaults = {
   rules: {
+    'curly': ['error', 'all'],
     'style/max-statements-per-line': ['error', { max: 2 }],
     'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'ts/consistent-type-definitions': ['error', 'interface'],
